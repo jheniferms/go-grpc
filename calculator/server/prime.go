@@ -8,8 +8,7 @@ import (
 
 func (s *Server) Primes(in *pb.PrimeRequest, stream pb.CalculatorService_PrimesServer) error {
 	fmt.Printf("Primes was involked with: %v\n", in)
-	var k uint32
-	k = 2
+	var k uint32 = 2
 	n := in.Number
 
 	for n > 1 {
