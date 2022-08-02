@@ -17,6 +17,7 @@ service GreetService{
     rpc Greet (GreetRequest) returns (GreetResponse);
     rpc GreetManyTimes (GreetRequest) returns (stream GreetResponse);
     rpc LongGreet (stream GreetRequest) returns (GreetResponse);
+    rpc GreetEveryone (stream GreetRequest) returns (stream GreetResponse);
 }
 
 //protoc -Igreet/proto --go_out=. --go_opt=module=github.com/jheniferms/go-grpc --go-grpc_out=. --go-grpc_opt=module=github.com/jheniferms/go-grpc greet/proto/dummy.proto
