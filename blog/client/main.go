@@ -21,7 +21,14 @@ func main() {
 
 	c := pb.NewBlogServiceClient(conn)
 
+	// id := createBlog(c)
+	// readBlog(c, id)
+	// readBlog(c, "invalid")
+
 	id := createBlog(c)
 	readBlog(c, id)
-	readBlog(c, "invalid")
+
+	updateBook(c, id)
+	readBlog(c, id)
+
 }
