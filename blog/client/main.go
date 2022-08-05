@@ -25,10 +25,12 @@ func main() {
 	// readBlog(c, id)
 	// readBlog(c, "invalid")
 
-	id := createBlog(c)
-	readBlog(c, id)
+	// id := createBlog(c)
+	// readBlog(c, id)
 
-	updateBook(c, id)
-	readBlog(c, id)
+	// updateBook(c, id)
+	// readBlog(c, id)
+
+	listBlog(c)
 
 }
