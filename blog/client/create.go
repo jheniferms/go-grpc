@@ -22,7 +22,7 @@ func createBlog(c pb.BlogServiceClient) string {
 		log.Fatal(err)
 	}
 
-	log.Println("Blog has been created: %s\n", res.Id)
+	log.Printf("Blog has been created: %s\n", res.Id)
 
 	return res.Id
 }
